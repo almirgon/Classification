@@ -170,7 +170,7 @@ const App = () => {
   const [resultsCanvas, setResultsCanvas] = useState(undefined);
 
   useEffect(() => {
-    models.load("/model_web").then(async model => {
+    models.load("/model").then(async model => {
       // warm up the model
       const image = new ImageData(1, 1);
       if (model.type === "detection") {
